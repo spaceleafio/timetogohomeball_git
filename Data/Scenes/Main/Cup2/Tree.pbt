@@ -1,4 +1,4 @@
-Name: "Cup 2"
+Name: "Cup2"
 RootId: 6092481369962363898
 Objects {
   Id: 3614637308886687150

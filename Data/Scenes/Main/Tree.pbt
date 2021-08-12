@@ -26,7 +26,8 @@ Objects {
   ChildIds: 10352964328119349813
   ChildIds: 6092481369962363898
   ChildIds: 22514608781781838
-  ChildIds: 8947098062577019960
+  ChildIds: 4978648071724015028
+  ChildIds: 17003080530304078618
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,6 +40,316 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 17003080530304078618
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 4978648071724015028
+  Name: "Leaderboard"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 8947098062577019960
+  ChildIds: 961185392830322730
+  ChildIds: 301067481750435951
+  ChildIds: 7937081655449474084
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+      ContentType {
+        Value: "mc:ecanvascontenttype:dynamic"
+      }
+      Opacity: 1
+      IsHUD: true
+      CanvasWorldSize {
+        X: 1024
+        Y: 1024
+      }
+      RedrawTime: 30
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 7937081655449474084
+  Name: "PlayerName_Label"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4978648071724015028
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 200
+    Height: 118
+    UIX: 63
+    UIY: 50
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:top"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      OutlineColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 301067481750435951
+  Name: "ScoreCard"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4978648071724015028
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:PlayerName_Label"
+      ObjectReference {
+        SelfId: 7937081655449474084
+      }
+    }
+    Overrides {
+      Name: "cs:PlayerScore_Label"
+      ObjectReference {
+        SelfId: 961185392830322730
+      }
+    }
+    Overrides {
+      Name: "cs:ScoreLeaderboard"
+      NetReference {
+        Key: "80AAFE30606721A0"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 40529900320697905
+    }
+  }
+}
+Objects {
+  Id: 961185392830322730
+  Name: "PlayerScore_Label"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4978648071724015028
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 96
+    Height: 60
+    UIX: 250
+    UIY: 50
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:top"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
   }
 }
 Objects {
@@ -55,15 +366,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 4978648071724015028
   UnregisteredParameters {
     Overrides {
-      Name: "cs:BallsSentHome"
+      Name: "cs:ScoreLeaderboard"
       NetReference {
-        Key: "216C530868406547"
+        Key: "80AAFE30606721A0"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
+      }
+    }
+    Overrides {
+      Name: "cs:PlayerName_Label"
+      ObjectReference {
+        SelfId: 7937081655449474084
+      }
+    }
+    Overrides {
+      Name: "cs:PlayerScore_Label"
+      ObjectReference {
+        SelfId: 961185392830322730
       }
     }
   }
@@ -87,7 +410,7 @@ Objects {
 }
 Objects {
   Id: 22514608781781838
-  Name: "Cube"
+  Name: "Ramp1"
   Transform {
     Location {
       X: -1996.28845
@@ -95,7 +418,7 @@ Objects {
       Z: 6003.10254
     }
     Rotation {
-      Roll: -15.5087585
+      Roll: -15.4205627
     }
     Scale {
       X: 15
@@ -104,6 +427,14 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17369039479664015391
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -135,7 +466,7 @@ Objects {
 }
 Objects {
   Id: 6092481369962363898
-  Name: "Cup 2"
+  Name: "Cup2"
   Transform {
     Location {
       X: -2000
@@ -165,7 +496,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Cup 2"
+    FilePartitionName: "Cup2"
   }
 }
 Objects {

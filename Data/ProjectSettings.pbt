@@ -7,9 +7,9 @@ LeaderboardConfigs {
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "Balls Sent Home"
-    Id: "216C530868406547"
-    EntryLimit: 100
+    Name: "ScoreLeaderboard"
+    Id: "80AAFE30606721A0"
+    EntryLimit: 50
   }
 }
 MaxPlayers: 8

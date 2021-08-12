@@ -1,4 +1,13 @@
 Assets {
+  Id: 17369039479664015391
+  Name: "Forest Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "forest-floor_001"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
