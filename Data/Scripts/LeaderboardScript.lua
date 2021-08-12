@@ -1,0 +1,1 @@
+local propBallsSentHome = script:GetCustomProperty("BallsSentHome")
