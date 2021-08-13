@@ -62,6 +62,12 @@ Objects {
         SelfId: 7570783292617558530
       }
     }
+    Overrides {
+      Name: "cs:GoalSound"
+      AssetReference {
+        Id: 17698075871005135163
+      }
+    }
   }
   WantsNetworking: true
   Collidable_v2 {

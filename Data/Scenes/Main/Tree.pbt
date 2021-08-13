@@ -17,17 +17,13 @@ Objects {
   ChildIds: 7367735074338159388
   ChildIds: 7841866247754588498
   ChildIds: 10005074784157121906
-  ChildIds: 13998249166592200357
-  ChildIds: 9629587798018342732
   ChildIds: 14713340454944924967
-  ChildIds: 16813558807825262224
-  ChildIds: 7570783292617558530
-  ChildIds: 5324639229757373690
   ChildIds: 10352964328119349813
-  ChildIds: 6092481369962363898
-  ChildIds: 22514608781781838
   ChildIds: 4978648071724015028
-  ChildIds: 17003080530304078618
+  ChildIds: 1542657109438879359
+  ChildIds: 9629587798018342732
+  ChildIds: 13998249166592200357
+  ChildIds: 1784980854403536998
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -43,8 +39,49 @@ Objects {
   }
 }
 Objects {
-  Id: 17003080530304078618
-  Name: "ClientContext"
+  Id: 1784980854403536998
+  Name: "SpawnGoalSound"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GoalSound"
+      AssetReference {
+        Id: 17698075871005135163
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13464206074035683330
+    }
+  }
+}
+Objects {
+  Id: 13998249166592200357
+  Name: "Terrain"
   Transform {
     Location {
     }
@@ -58,7 +95,7 @@ Objects {
   }
   ParentId: 4781671109827199097
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -69,7 +106,81 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  NetworkContext {
+  Terrain {
+    Material {
+      Id: 5301613587609967657
+    }
+    VoxelSize: 700
+    OctreeDepth: 5
+    GeneratorID: "DEPRECATED"
+    MaxLOD: 32
+  }
+}
+Objects {
+  Id: 9629587798018342732
+  Name: "Ambient Occlusion Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10656428283610747783
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 1542657109438879359
+  Name: "Map"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Map"
   }
 }
 Objects {
@@ -166,8 +277,8 @@ Objects {
   Control {
     Width: 200
     Height: 118
-    UIX: 63
-    UIY: 50
+    UIX: 746.401611
+    UIY: 144.031281
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -180,7 +291,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 30
+      Size: 35
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -304,8 +415,8 @@ Objects {
   Control {
     Width: 96
     Height: 60
-    UIX: 250
-    UIY: 50
+    UIX: 933.401611
+    UIY: 144.031281
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -318,7 +429,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 30
+      Size: 35
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -409,97 +520,6 @@ Objects {
   }
 }
 Objects {
-  Id: 22514608781781838
-  Name: "Ramp1"
-  Transform {
-    Location {
-      X: -1996.28845
-      Y: 6246.39551
-      Z: 6003.10254
-    }
-    Rotation {
-      Roll: -15.4205627
-    }
-    Scale {
-      X: 15
-      Y: 40
-      Z: 0.5
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17369039479664015391
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 6092481369962363898
-  Name: "Cup2"
-  Transform {
-    Location {
-      X: -2000
-      Y: 10123.5293
-      Z: 4282.77637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Cup2"
-  }
-}
-Objects {
   Id: 10352964328119349813
   Name: "TheReferee"
   Transform {
@@ -558,113 +578,6 @@ Objects {
         Id: 841534158063459245
       }
     }
-  }
-}
-Objects {
-  Id: 5324639229757373690
-  Name: "Cup"
-  Transform {
-    Location {
-      X: -2000
-      Z: 3400
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Cup"
-  }
-}
-Objects {
-  Id: 7570783292617558530
-  Name: "GolfBall_interact"
-  Transform {
-    Location {
-      X: -2350
-      Y: 2900
-      Z: 8150
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "GolfBall_interact"
-  }
-}
-Objects {
-  Id: 16813558807825262224
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: 200
-      Y: 2200
-      Z: 7200
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
   }
 }
 Objects {
@@ -885,78 +798,6 @@ Objects {
     ScriptAsset {
       Id: 1529312219608432922
     }
-  }
-}
-Objects {
-  Id: 9629587798018342732
-  Name: "Ambient Occlusion Post Process"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10656428283610747783
-    }
-    TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 13998249166592200357
-  Name: "Terrain"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Terrain {
-    Material {
-      Id: 5301613587609967657
-    }
-    VoxelSize: 700
-    OctreeDepth: 5
-    GeneratorID: "DEPRECATED"
-    MaxLOD: 32
   }
 }
 Objects {
