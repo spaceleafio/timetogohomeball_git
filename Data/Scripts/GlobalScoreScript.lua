@@ -12,7 +12,7 @@ end
 Events.Connect("Goal", ScoreIncrement)
 
 function ScoreDecrement()
-    score = score - 1
+    score = score - 2
     propPlayerScore_Label.text = tostring(score)
     UI.PrintToScreen(" Debug: ScoreDecrement Event Triggered, new score: " .. score)
 end
