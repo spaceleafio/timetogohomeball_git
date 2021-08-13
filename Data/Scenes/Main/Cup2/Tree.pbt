@@ -17,7 +17,7 @@ Objects {
     }
   }
   ParentId: 6092481369962363898
-  ChildIds: 15558354489021756905
+  ChildIds: 7084538242749455268
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -41,16 +41,18 @@ Objects {
   }
 }
 Objects {
-  Id: 15558354489021756905
+  Id: 7084538242749455268
   Name: "BallGoal_interact"
   Transform {
     Location {
+      Y: -47.7525
+      Z: -49.0431328
     }
     Rotation {
     }
     Scale {
       X: 0.1
-      Y: 0.1
+      Y: 0.0999999866
       Z: 1
     }
   }
@@ -60,6 +62,12 @@ Objects {
       Name: "cs:GolfBall_interact"
       ObjectReference {
         SelfId: 7570783292617558530
+      }
+    }
+    Overrides {
+      Name: "cs:GoalSound"
+      AssetReference {
+        Id: 17698075871005135163
       }
     }
   }

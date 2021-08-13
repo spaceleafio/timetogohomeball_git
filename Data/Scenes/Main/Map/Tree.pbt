@@ -39,15 +39,9 @@ Objects {
   }
 }
 Objects {
-  Id: 5324639229757373690
+  Id: 2539416200624292840
   Name: "Cup"
   Transform {
-    Location {
-      X: -2000
-      Z: 3400
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -61,15 +55,26 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Cup"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15248192104493997129
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Cup"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2000
+            Z: 3400
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9844673721753909754
+    }
   }
 }
 Objects {

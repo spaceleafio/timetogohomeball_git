@@ -1,6 +1,6 @@
 Assets {
-  Id: 1556479009976758682
-  Name: "PlayerJoinLeave"
+  Id: 40529900320697905
+  Name: "GlobalScoreScript"
   PlatformAssetType: 3
   TextAsset {
   }

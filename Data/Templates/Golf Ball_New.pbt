@@ -1,6 +1,6 @@
 Assets {
   Id: 6702342323305596877
-  Name: "Golf Ball_interact"
+  Name: "Golf Ball_New"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

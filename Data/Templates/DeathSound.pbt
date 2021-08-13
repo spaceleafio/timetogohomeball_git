@@ -1,13 +1,13 @@
 Assets {
-  Id: 17698075871005135163
-  Name: "GoalSound"
+  Id: 6493681228964231481
+  Name: "DeathSound"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 14519028286728981707
+      RootId: 15147836465340378587
       Objects {
-        Id: 14519028286728981707
-        Name: "GoalSound"
+        Id: 15147836465340378587
+        Name: "DeathSound"
         Transform {
           Scale {
             X: 1
@@ -15,8 +15,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
-        ChildIds: 18195458759290037010
+        ParentId: 11095196239503314166
+        ChildIds: 5862582887014913167
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -34,12 +34,13 @@ Assets {
         }
       }
       Objects {
-        Id: 18195458759290037010
-        Name: "Meta Fantasy Treasure 01 SFX"
+        Id: 5862582887014913167
+        Name: "VO Generic Male Jump Grunt 03 SFX"
         Transform {
           Location {
-            X: -2031.29126
-            Z: 5918.28418
+            X: -2178.50171
+            Y: -98.7149658
+            Z: 4103.86816
           }
           Rotation {
           }
@@ -49,7 +50,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14519028286728981707
+        ParentId: 15147836465340378587
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -64,10 +65,9 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 12218474323238565590
+            Id: 15022074328329253332
           }
           AutoPlay: true
-          Pitch: 214.171143
           Volume: 1
           Falloff: -1
           Radius: -1
@@ -75,12 +75,12 @@ Assets {
       }
     }
     Assets {
-      Id: 12218474323238565590
-      Name: "Meta Fantasy Treasure 01 SFX"
+      Id: 15022074328329253332
+      Name: "VO Generic Male Jump Grunt 03 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_meta_fantasy_treasure_01_Cue_ref"
+        AssetId: "sfx_vo_generic_male_jump_grunt_03a_Cue_ref"
       }
     }
     PrimaryAssetId {

@@ -1,6 +1,6 @@
 Assets {
-  Id: 40529900320697905
-  Name: "ScoreCard"
+  Id: 1328016698305527278
+  Name: "SpawnDeathSound"
   PlatformAssetType: 3
   TextAsset {
   }
