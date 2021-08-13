@@ -34,7 +34,8 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 0.1
+      AutoPlay: true
+      Volume: 0.15
       Falloff: 3600
       Radius: 400
     }

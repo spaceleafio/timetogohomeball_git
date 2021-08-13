@@ -1,5 +1,39 @@
-Name: "Game Settings"
+Name: "Settings"
 RootId: 1868500733034219436
+Objects {
+  Id: 9787981414116428328
+  Name: "CoinGameLogic"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1868500733034219436
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 333684206890195328
+    }
+  }
+}
 Objects {
   Id: 14713340454944924967
   Name: "Third Person Camera Settings"
@@ -19,6 +53,7 @@ Objects {
   ChildIds: 724324913679364851
   UnregisteredParameters {
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -50,6 +85,7 @@ Objects {
   ChildIds: 3567959178173361743
   UnregisteredParameters {
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -128,6 +164,7 @@ Objects {
   ChildIds: 4325131639602279221
   UnregisteredParameters {
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -206,6 +243,7 @@ Objects {
     }
   }
   ParentId: 4226120016796708080
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -292,6 +330,7 @@ Objects {
       Float: 0.252305031
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -327,6 +366,7 @@ Objects {
     }
   }
   ParentId: 1868500733034219436
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -368,6 +408,7 @@ Objects {
   ChildIds: 10505154200474359396
   UnregisteredParameters {
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -468,6 +509,7 @@ Objects {
       }
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -550,6 +592,7 @@ Objects {
       }
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -684,6 +727,7 @@ Objects {
       Float: 0.2
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -714,6 +758,7 @@ Objects {
     }
   }
   ParentId: 13551641546322277000
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -747,6 +792,17 @@ Objects {
     }
   }
   ParentId: 1868500733034219436
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:gameOver"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:gameOver:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
