@@ -4,7 +4,7 @@ Name: "timetogohomeball_j01"
 Description: "Time to go Home Ball Prototyping"
 MaxPlayers: 8
 Tags: "Other"
-ScreenshotPaths: "C:\\Users\\info\\OneDrive\\Pictures\\Screenshot 2021-08-13 084403.png"
+ScreenshotPaths: "C:\\Users\\info\\OneDrive\\Pictures\\levels idea.png"
 OwnerId: "c03a1c67de8a48de89bba4185690ff51"
 SerializationVersion: 1
 AllowDirectJoinAsChild: true

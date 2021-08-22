@@ -1,6 +1,7 @@
 
 local propMagicAbilityFx = script:GetCustomProperty("MagicAbilityFx")
 local propMagStaff = script:GetCustomProperty("MagStaff"):WaitForObject()
+local propBall = script:GetCustomProperty("Ball")
 
 -- function to connect event handlers to ability events 
 function ConnectAbilityEvents_Magic(ability)
@@ -26,11 +27,13 @@ end
 function OnExecute_Magic(ability)
 	print("OnExecute " .. ability.name)
 	
-	local orbPosition = ability.owner:GetWorldPosition()
+	local player = ability.owner
+	local orbPosition = player:GetWorldPosition()
 	local magicAbility = World.SpawnAsset(propMagicAbilityFx, {position = orbPosition})
 	magicAbility:AttachToPlayer(ability.owner, "head")
 
-	-- magicAbility:SetWorldPosition(ability.owner:GetWorldPosition())
+	local ball = World.FindObjectByName("Ball")
+	local playerPos = player:GetWorldPosition()
 
 end
 
@@ -57,13 +60,32 @@ local allAbilities = propMagStaff:GetAbilities()
 
 function OnTick(ability, deltaTime)
     -- print("Updating ability " .. ability.name)
+
+	-- Place ORB Vfx and have it surround and follow player
 	local magicAbility = script:FindAncestorByName(propMagicAbilityFx)
 	
 	if magicAbility then
 	print('MagicAbilityFX Found! Updating position!')
 	magicAbility:SetWorldPosition(ability.owner:GetWorldPosition())
 	else 
+	end
 
+	local player = ability.owner
+	local ball = World.FindObjectByName("Ball")
+	local ballSpeed = 500
+	local playerDirection = player:GetWorldPosition() - ball:GetWorldPosition()
+	local velocity = playerDirection:GetNormalized() * ballSpeed
+	ball:SetVelocity(velocity)
+
+	-- Get Raycast for line between the ball and player
+	local rayStart = player:GetWorldPosition()
+	local rayEnd = ball:GetWorldPosition()
+	local hitResult = World.Raycast(rayStart, rayEnd, {ignorePlayers = true})
+
+	if hitResult then
+		local hitPos = hitResult:GetImpactPosition()
+		local normal = hitResult:GetImpactNormal()
+		-- CoreDebug.DrawLine(rayStart, hitPos, {thickness = 2, color = Color.BLUE, duration = 1})
 	end
 
 end
@@ -71,8 +93,6 @@ end
 for _, ability in ipairs(allAbilities) do
     ability.tickEvent:Connect(OnTick)
 end
-
-
 
 
 -- reference to ability object, modify as needed
@@ -83,3 +103,4 @@ local myAbility = script.parent
 ConnectAbilityEvents_Magic(myAbility)
 
 --------------------------------------------------------------------------------
+

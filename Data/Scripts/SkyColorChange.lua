@@ -1,1 +1,0 @@
-local sky = script.parent

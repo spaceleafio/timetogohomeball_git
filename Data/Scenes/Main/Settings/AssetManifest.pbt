@@ -1,4 +1,22 @@
 Assets {
+  Id: 18441810659176357459
+  Name: "Planet"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_Planet"
+  }
+}
+Assets {
+  Id: 17063449512846892296
+  Name: "Planetary Ring"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_PlanetaryRing"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -17,15 +35,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10656428283610747783
-  Name: "Ambient Occlusion Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_ao"
-  }
-}
-Assets {
   Id: 7887238662729938253
   Name: "Sky Dome"
   PlatformAssetType: 6
@@ -35,11 +44,20 @@ Assets {
   }
 }
 Assets {
-  Id: 5551392428623634434
-  Name: "Advanced Bloom Post Process"
-  PlatformAssetType: 20
+  Id: 2224571462023946700
+  Name: "Environment Fog Default VFX"
+  PlatformAssetType: 6
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_bloom_advanced"
+    AssetId: "fxbp_env_fog_default"
+  }
+}
+Assets {
+  Id: 1353607577508895962
+  Name: "Moon"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_Moon"
   }
 }

@@ -1,35 +1,22 @@
 -- Setup Trigger / Ball
 local trigger = script.parent
-local ball = script:GetCustomProperty("GolfBall_interact"):WaitForObject()
-local ballStart = ball:GetWorldPosition()
+local ball = World.FindObjectByName("BallwMem")
+local ballPos = ball:GetWorldPosition()
+
 
 
 function OnBallOverlap(trigger, ball)
-	if ball and trigger:IsOverlapping(ball) then
-
-        -- Broadcast Goal Event for Score Increment, SoundFX
-        Events.Broadcast("Goal")
+	if ball and ball:IsA("PhysicsObject") then
+        -- print(tostring(ball) .. "is indeed passed into OnBallOverlap!")
         
-		UI.PrintToScreen("BALL!")
-        Task.Wait(5)
-        ball:SetWorldPosition(ballStart)
+        -- Broadcast Goal Event for Score Increment, SoundFX
+        -- Events.Broadcast("Goal")
+
+        -- trigger:Destroy()
+
+        ball:SetWorldPosition(ballPos)
+        ball:SetVelocity(Vector3.New(0,0,0))
+        ball:SetAngularVelocity(Vector3.New(0,0,0))
 	end
 end
-trigger.beginOverlapEvent:Connect(OnBallOverlap)
-
-
-function OnPlayerOverlap(trigger, player)
-    local respawnPos = Vector3.New(200,2200,7200)
-    local respawnRot = Rotation.ZERO
-    if player and player:IsA("Player") then
-
-        -- Death Event is Broadcasted for point decrease, SpawnDeathSound
-        Events.Broadcast("Death")
-
-        player:Die()
-        UI.PrintToScreen("Player Died In Hole!")
-        Task.Wait(5)
-        player:Spawn({respawnPos, respawnRot})
-    end
-end
-trigger.beginOverlapEvent:Connect(OnPlayerOverlap)
+script.parent.beginOverlapEvent:Connect(OnBallOverlap, ball)
