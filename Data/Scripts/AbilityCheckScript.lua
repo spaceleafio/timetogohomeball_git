@@ -1,0 +1,2 @@
+local player = Game.GetLocalPlayer()
+

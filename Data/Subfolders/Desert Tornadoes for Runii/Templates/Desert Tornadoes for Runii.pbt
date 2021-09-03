@@ -40,5 +40,5 @@ Assets {
     Version: "1.0.0"
     Description: "This is a drag and drop pack of desert tornadoes that are displayed via client context. Use the Terrain generator to create Sand Dunes terrain and then drop these tornadoes down on the background terrain for added scenery."
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
 }

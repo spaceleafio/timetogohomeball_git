@@ -79,6 +79,9 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           Radius: 625
+          DamageSettings {
+            StartImmortal: true
+          }
         }
       }
       Objects {
@@ -185,5 +188,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
 }

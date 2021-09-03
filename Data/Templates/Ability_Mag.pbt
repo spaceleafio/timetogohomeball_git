@@ -1,13 +1,13 @@
 Assets {
   Id: 14602546589219335557
-  Name: "MagAbility"
+  Name: "Ability_Mag"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 1695465289496669973
       Objects {
         Id: 1695465289496669973
-        Name: "MagAbility"
+        Name: "Mag"
         Transform {
           Scale {
             X: 1
@@ -80,7 +80,7 @@ Assets {
       }
       Objects {
         Id: 9540965773051119104
-        Name: "MagicAbility"
+        Name: "Ability_Mag"
         Transform {
           Location {
           }
@@ -103,7 +103,6 @@ Assets {
           Overrides {
             Name: "cs:MagStaff"
             ObjectReference {
-              SelfId: 17933597972080166171
             }
           }
         }
@@ -132,5 +131,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
+  VirtualFolderPath: "Abilities"
 }

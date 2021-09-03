@@ -478,6 +478,6 @@ Assets {
   Marketplace {
     Description: "Red Oak model with bushes at the base "
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
   DirectlyPublished: true
 }

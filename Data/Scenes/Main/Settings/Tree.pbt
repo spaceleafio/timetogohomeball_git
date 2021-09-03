@@ -1,6 +1,39 @@
 Name: "Settings"
 RootId: 1868500733034219436
 Objects {
+  Id: 7391785425113099189
+  Name: "PlayerData"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1868500733034219436
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17068615913956558667
+      value {
+        Overrides {
+          Name: "Name"
+          String: "PlayerData"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1180316131537094238
+    }
+  }
+}
+Objects {
   Id: 8043791319223696869
   Name: "Sky Sci-fi 02"
   Transform {
@@ -808,6 +841,7 @@ Objects {
       CanMoveDown: true
       IsMountEnabled: true
       MaxHitpoints: 100
+      PlayerMasterVolumeMultiplier: 1
     }
   }
 }

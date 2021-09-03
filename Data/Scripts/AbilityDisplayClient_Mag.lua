@@ -23,6 +23,7 @@ local ICON = script:GetCustomProperty("Icon"):WaitForObject()
 local COUNTDOWN_TEXT = script:GetCustomProperty("CountdownText"):WaitForObject()
 local BINDING_TEXT = script:GetCustomProperty("BindingText"):WaitForObject()
 local NAME_TEXT = script:GetCustomProperty("NameText"):WaitForObject()
+-- local NAME_TEXT = "Town Portal"
 local PROGRESS_INDICATOR = script:GetCustomProperty("ProgressIndicator"):WaitForObject()
 local RIGHT_SHADOW = script:GetCustomProperty("RightShadow"):WaitForObject()
 local LEFT_SHADOW = script:GetCustomProperty("LeftShadow"):WaitForObject()

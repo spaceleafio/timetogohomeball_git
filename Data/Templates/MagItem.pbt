@@ -4805,7 +4805,6 @@ Assets {
         Ability {
           IsEnabled: true
           CastPhaseSettings {
-            Duration: 0.5
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -4881,7 +4880,7 @@ Assets {
           Overrides {
             Name: "cs:Ball"
             AssetReference {
-              Id: 841534158063459245
+              Id: 17065801320427838005
             }
           }
         }
@@ -5054,5 +5053,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
 }

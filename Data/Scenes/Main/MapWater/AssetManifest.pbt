@@ -1,19 +1,19 @@
 Assets {
-  Id: 13508517416509649817
-  Name: "Generic Water"
+  Id: 18113719093231904634
+  Name: "Faceted Water"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "fxma_parameter_driven_water_manual"
+    AssetId: "water_faceted_001"
   }
 }
 Assets {
-  Id: 12171560874449554673
-  Name: "Glass 01"
-  PlatformAssetType: 2
+  Id: 14439641183269359886
+  Name: "Waterfall Straight Long Exposure"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_basic_glass_refrac_001"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "longexposure_waterfall_straight"
   }
 }
 Assets {

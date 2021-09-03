@@ -1,6 +1,6 @@
 Assets {
   Id: 1094716362924400893
-  Name: "MagicAbilityFx"
+  Name: "Ability_MagFx"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -317,7 +317,7 @@ Assets {
             Float: 2.1713
           }
         }
-        Lifespan: 6
+        Lifespan: 3
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -405,5 +405,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
+  VirtualFolderPath: "Abilities"
 }

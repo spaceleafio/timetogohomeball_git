@@ -1,9 +1,19 @@
+local magAbility = script:GetCustomProperty("MAG")
+local townPortalAbility = script:GetCustomProperty("TownPortal")
+
 function OnPlayerJoined(player)
 	print("player joined: " .. player.name)
 
 	local data = Storage.GetPlayerData(player)
 	local score = data["Score"] or 0
 	player:SetResource("Score", score)
+
+	local ability_magic = World.SpawnAsset(magAbility)
+	ability_magic.owner = player
+
+	local ability_townPortal = World.SpawnAsset(townPortalAbility)
+	ability_townPortal.owner = player
+
 	
 end
 

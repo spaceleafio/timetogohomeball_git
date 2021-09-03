@@ -1,8 +1,8 @@
 Assets {
-  Id: 5999430923066976066
+  Id: 10439179663256110643
   Name: "Virtual Folders"
   PlatformAssetType: 30
-  SerializationVersion: 95
+  SerializationVersion: 97
   VirtualFolderSetAsset {
     Folders {
       VirtualFolderPath: "Interaction System"
@@ -42,6 +42,14 @@ Assets {
       VirtualFolderPath: "Components"
       VirtualFolderPath: "Template"
       PlatformAssetType: 3
+    }
+    Folders {
+      VirtualFolderPath: "Abilities"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Player Data"
+      PlatformAssetType: 5
     }
   }
 }

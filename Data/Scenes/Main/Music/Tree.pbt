@@ -38,6 +38,8 @@ Objects {
       Volume: 0.1
       Falloff: 3600
       Radius: 400
+      FadeInTime: 2
+      FadeOutTime: 2
     }
   }
 }

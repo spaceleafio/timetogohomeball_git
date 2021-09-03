@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "Red Oak model with bushes at the base "
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
 }

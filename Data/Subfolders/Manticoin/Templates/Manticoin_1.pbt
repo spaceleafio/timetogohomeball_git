@@ -402,6 +402,6 @@ Assets {
   Marketplace {
     Description: "This is a model only! \r\n\r\nThis was mainly for use in old and now-replaced Advanced Scripting in Core tutorial, but feel free to use this however you like.\r\n\r\n------\r\n\r\n...A manti-coin for becoming manti-rich.\r\n\r\n-----\r\n\r\nUpdate: Rewriting description to reflect current use."
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
   DirectlyPublished: true
 }

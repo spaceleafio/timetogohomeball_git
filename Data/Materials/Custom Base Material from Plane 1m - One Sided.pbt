@@ -2,7 +2,7 @@ Assets {
   Id: 6696222749695265780
   Name: "Custom Base Material from Plane 1m - One Sided"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 8768538644254692262
     ParameterOverrides {

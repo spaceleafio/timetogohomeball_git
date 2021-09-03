@@ -7,7 +7,7 @@ Assets {
       RootId: 18192837860323346950
       Objects {
         Id: 18192837860323346950
-        Name: "GolfBall_KB"
+        Name: "Ball"
         Transform {
           Scale {
             X: 0.25
@@ -39,19 +39,23 @@ Assets {
           }
           Settings {
             OverrideMass: true
-            Mass: 275
-            LinearDamping: 0.01
+            Mass: 50
+            LinearDamping: 0.25
+            AngularDamping: 0.5
           }
           TeamSettings {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
           Radius: 675
+          DamageSettings {
+            StartImmortal: true
+          }
         }
       }
       Objects {
         Id: 17214627423547194594
-        Name: "puzzleRamp_BallMemoryTrigger"
+        Name: "BallMemoryTrigger"
         Transform {
           Location {
           }
@@ -64,7 +68,7 @@ Assets {
           }
         }
         ParentId: 18192837860323346950
-        ChildIds: 10272676879545470325
+        ChildIds: 844746926783223227
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
@@ -89,8 +93,8 @@ Assets {
         }
       }
       Objects {
-        Id: 10272676879545470325
-        Name: "puzzleSpiral_LastBallContact"
+        Id: 844746926783223227
+        Name: "LastBallContact"
         Transform {
           Location {
           }
@@ -105,24 +109,13 @@ Assets {
         ParentId: 17214627423547194594
         UnregisteredParameters {
           Overrides {
-            Name: "cs:RampBallLastTouchedBy"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:trigger_puzzleRampBallRespawnPlane"
+            Name: "cs:ScoreGlobe"
             ObjectReference {
-              SelfId: 17105828005057750067
+              SelfId: 10414062232169033468
+              SubObjectId: 9065479057368939036
+              InstanceId: 7208245266125235015
+              TemplateId: 5077304741161661241
             }
-          }
-          Overrides {
-            Name: "cs:puzzleRamp_Goal"
-            ObjectReference {
-              SelfId: 9184490573556825399
-            }
-          }
-          Overrides {
-            Name: "cs:RampBallLastTouchedBy:tooltip"
-            String: "The name of the player who last touched the Blast Ramp ball."
           }
         }
         WantsNetworking: true
@@ -140,7 +133,7 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 17046092559367222392
+            Id: 14127687155667627916
           }
         }
       }
@@ -160,6 +153,7 @@ Assets {
         }
         ParentId: 18192837860323346950
         ChildIds: 8136914833336838391
+        ChildIds: 15749108795615807665
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -233,6 +227,39 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 15749108795615807665
+        Name: "AbilityCheckScript"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17654145019377529876
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 968123384164218545
+          }
+        }
+      }
     }
     Assets {
       Id: 2971483111289815783
@@ -248,5 +275,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
 }

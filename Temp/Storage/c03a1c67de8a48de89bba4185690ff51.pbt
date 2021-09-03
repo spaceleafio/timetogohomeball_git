@@ -3,6 +3,6 @@ Entries {
     StringVar: "Score"
   }
   SimpleValue {
-    IntVar: 80
+    IntVar: 87
   }
 }

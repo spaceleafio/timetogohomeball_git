@@ -2,7 +2,7 @@ Assets {
   Id: 1303845468235249357
   Name: "Crossbow Magic Gold"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 14329727928034063017
     ParameterOverrides {

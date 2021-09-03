@@ -1,6 +1,89 @@
 Name: "Map0-HUB"
 RootId: 1542657109438879359
 Objects {
+  Id: 17739243688797394947
+  Name: "Cup wSP"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1542657109438879359
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2014692097877459380
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -33.8891602
+            Z: 500
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11805115079956137525
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.1
+            Y: 0.099999994
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15248192104493997129
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Cup wSP"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6950
+            Y: 5600
+            Z: 2650
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9844673721753909754
+    }
+  }
+}
+Objects {
   Id: 11161606903173184336
   Name: "Globes"
   Transform {
@@ -420,8 +503,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 85.794342
-      Y: -3260.85107
+      X: 4550
+      Y: 20000
       Z: 5150
     }
     Rotation {

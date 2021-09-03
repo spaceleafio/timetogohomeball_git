@@ -1,6 +1,6 @@
 -- Setup Trigger / Ball
 local trigger = script.parent
-local ball = World.FindObjectByName("BallwMem")
+local ball = World.FindObjectByName("Ball")
 local ballPos = ball:GetWorldPosition()
 
 

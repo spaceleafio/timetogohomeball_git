@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "Nice little shop to sell things from."
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
 }

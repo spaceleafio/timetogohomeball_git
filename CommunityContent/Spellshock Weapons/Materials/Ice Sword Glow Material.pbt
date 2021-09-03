@@ -2,7 +2,7 @@ Assets {
   Id: 15918357833595677949
   Name: "Ice Sword Glow Material"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 16005537926226967737
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 16321063012629823387
   Name: "Ice Blast Edge Material"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 2721411165435899975
     ParameterOverrides {

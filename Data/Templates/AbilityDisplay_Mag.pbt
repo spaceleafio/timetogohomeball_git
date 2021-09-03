@@ -1,13 +1,13 @@
 Assets {
   Id: 12581917389657730342
-  Name: "Ability Display"
+  Name: "AbilityDisplay_Mag"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 1197405803885299036
       Objects {
         Id: 1197405803885299036
-        Name: "Ability Display"
+        Name: "Ability Display_Mag"
         Transform {
           Scale {
             X: 1
@@ -15,20 +15,20 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14256649674182269152
+        ParentId: 105447348137373929
         ChildIds: 16806953419607315691
         UnregisteredParameters {
           Overrides {
             Name: "cs:Binding"
-            String: "ability_primary"
+            String: "ability_secondary"
           }
           Overrides {
             Name: "cs:BindingHint"
-            String: "M1"
+            String: "R-Click"
           }
           Overrides {
             Name: "cs:ShowAbilityName"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "cs:HideWhenDisabled"
@@ -97,7 +97,7 @@ Assets {
       }
       Objects {
         Id: 14026245086034633939
-        Name: "AbilityDisplayClient"
+        Name: "AbilityDisplayClient_Mag"
         Transform {
           Location {
           }
@@ -132,7 +132,6 @@ Assets {
           Overrides {
             Name: "cs:DisabledBorder"
             ObjectReference {
-              SelfId: 11125258893309282057
             }
           }
           Overrides {
@@ -286,8 +285,7 @@ Assets {
         Control {
           Width: 100
           Height: 200
-          UIX: 100
-          UIY: -50
+          UIX: -50
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -299,12 +297,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomleft"
+                Value: "mc:euianchor:bottomright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomleft"
+                Value: "mc:euianchor:bottomright"
               }
             }
           }
@@ -346,7 +344,7 @@ Assets {
             }
           }
           Text {
-            Label: "Hotkey"
+            Label: "R-Click"
             Color {
               R: 1
               G: 1
@@ -411,7 +409,7 @@ Assets {
             }
           }
           Text {
-            Label: "Ability"
+            Label: "MAG"
             Color {
               R: 1
               G: 1
@@ -424,6 +422,12 @@ Assets {
             }
             Font {
             }
+            OutlineColor {
+              G: 0.208636895
+              B: 0.854992807
+              A: 1
+            }
+            OutlineSize: 5
           }
           AnchorLayout {
             SelfAnchor {
@@ -531,7 +535,7 @@ Assets {
           }
           Image {
             Brush {
-              Id: 16327934883181731081
+              Id: 4524625301682985997
             }
             Color {
               A: 0.75
@@ -902,12 +906,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16327934883181731081
-      Name: "Icon Food"
+      Id: 4524625301682985997
+      Name: "Atomic"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "Icon_Food"
+        AssetId: "UI_Scifi_Icon_025"
       }
     }
     PrimaryAssetId {
@@ -915,5 +919,6 @@ Assets {
       AssetId: "Ability_Display"
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
+  VirtualFolderPath: "Abilities"
 }
